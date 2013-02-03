@@ -1,0 +1,40 @@
+#+title: Eltbus is subtle
+
+
+* Guiding principles 
+  
+** Don't distract
+   - Extremely subtle colours
+
+** Let syntax-highlighting do some work for you
+   - Syntax highlighting is distracting, but it does serve a purpose.
+   - Cryptic errors arise from unclosed comments and unterminated strings.
+
+** Important things stand out
+   - Highlighting Keywords, types and builtins provides a mental note
+     to self that you haven't mistyped
+   - giving a different color/formatting style to links helps too.
+   
+** Unimportant things dont
+   - Comments are often useless when coding
+   - Doc-comments are slightly more usefu
+     - These stand out a little more than normal comments
+
+     - 
+* A customary screenshot
+  [[http://i.imgur.com/bCyoytv.png][Screenshot showing highlighting for C]]
+  
+* Get involved
+  - Emacs has several font-faces. You can see this using
+    #+begin_verbatim
+    M-x list-faces-display 
+    #+end_verbatim
+    
+  - If you are on a particular word and wonder what highlighting it
+    uses, use
+    #+begin_verbatim
+    M-x describe-faces
+    #+end_verbatim
+       
+  - If you feel =eltbus= is doing a bad job with it, add another entry
+    for it and send me a PR. If it is subtle enough, I will pull
