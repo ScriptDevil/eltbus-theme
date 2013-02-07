@@ -133,8 +133,9 @@
    ;; speedbar-selected-face
    ;; speedbar-separator-face
    ;; speedbar-tag-face
-   `(show-paren-match ((t (,@default-color ,@fmt-rev))))
-   `(show-paren-mismatch ((t (,@err-like ,@fmt-rev))))
+   `(show-paren-match ((t (:background "gray10"
+			   ,@fmt-rev))))
+   `(show-paren-mismatch ((t (:background "red" :foreground "black" ,@fmt-rev))))
    ;; widget-field
    ;;widget-single-line
    `(flymake-errline ((t (,@err-like ,@fmt-bld))))
